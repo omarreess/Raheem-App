@@ -1,58 +1,63 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:raheem/UI/PrayerTime.dart';
-import 'package:raheem/UI/Story.dart';
+import 'package:flutter/services.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:raheem/Network%20Layer/StoriesRemote.dart';
+import 'package:raheem/UI/home/HomePresenter.dart';
+import 'package:raheem/UI/home/HomeScreen.dart';
+import 'package:raheem/UI/intro/IntroScreen.dart';
+import 'file:///E:/Dart/Projects/raheem/lib/UI/home/PrayerTimeWidget.dart';
+import 'file:///E:/Dart/Projects/raheem/lib/UI/home/StoryWidget.dart';
+import 'package:raheem/UI/splash/SplashScreen.dart';
+import 'package:raheem/UI/story/StoryScreen.dart';
+import 'package:location/location.dart';
+ import 'package:geocoder/geocoder.dart';
 
 
-Color backgroundBlue = Color(int.parse('#5d6d94'.replaceAll('#', '0xff')));
+
 
 void main() {
-  runApp(MyApp());
+
+  //For Locking Landscape-Orientation
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
+      .then((_) {
+    runApp(App());
+  });
+
+
+
  }
 
-class MyApp extends StatelessWidget {
+class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Raheem App',
+        debugShowCheckedModeBanner: false,
+        title: 'Raheem App',
+          initialRoute: 'splash',
+      routes: appRoutes,
       theme: ThemeData(
-        primaryColor: backgroundBlue,
-             primaryColorDark: Color(304363)
+
+        primaryColor: Color(int.parse('#5d6d94'.replaceAll('#', '0xff'))),
+             primaryColorLight:Color(int.parse('#8c9bc5'.replaceAll('#', '0xff')) ),
+             primaryColorDark: Color(304363),
+            textTheme: GoogleFonts.cairoTextTheme()
+
        ),
-      home:  Home()
+       // home:  AppScaffold()
     );
   }
 }
-class Home extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: backgroundBlue,
-        appBar: AppBar(backgroundColor :backgroundBlue,title: Text('Raheem App ')),
-    body:  Padding(
 
-      padding: const EdgeInsets.all(10.5),
+final appRoutes =   {
+'into': (context) => IntroScreen(),
+
+'splash': (context) => SplashScreen(),
+'home': (context) => HomeScreen(),
+'story': (context) => StoryScreen(),
 
 
-
-         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start ,
-           children: [
-             Story(),
-             Divider(
-               height: 30
-               , indent: double.infinity,
-               endIndent: double.infinity,),
-             PrayerTime(),
-
-            ],
-         )
-         ),
-
-    );
+};
 
 
-  }
-}
-
-   
-   

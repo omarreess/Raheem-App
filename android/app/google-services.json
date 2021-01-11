@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "572324976012",
+    "project_id": "raheem-e24fc",
+    "storage_bucket": "raheem-e24fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572324976012:android:4737c9406c2baa9d21f2a9",
+        "android_client_info": {
+          "package_name": "com.omaressam.raheem.raheem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572324976012-15afg7bimjq1lrq84atvcjf6lb6vhqo0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.omaressam.raheem.raheem",
+            "certificate_hash": "d891e7d4e9baaa404167d015bfdd2a110317c4a5"
+          }
+        },
+        {
+          "client_id": "572324976012-qs4d41gncko9muo0fhm628lpsgdib00q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Hr9dpw4kqvGFyFZ2IW8lZU70hJlkZY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572324976012-qs4d41gncko9muo0fhm628lpsgdib00q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

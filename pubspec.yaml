@@ -24,6 +24,20 @@ dependencies:
   flutter:
     sdk: flutter
   intl: ^0.16.1
+  flutter_automation: ^1.1.4
+  provider: ^4.3.2+2
+  location: ^3.0.0
+  adhan: ^1.1.13
+  geocoder: ^0.2.1
+  cloud_firestore: ^0.14.4
+  firebase_core: ^0.5.2+1
+  firebase_analytics: ^5.0.2
+  flutter_svg: ^0.18.0
+  google_fonts: ^1.1.1
+  cached_network_image: ^2.5.0
+
+
+
 
 
 
@@ -35,11 +49,18 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: "^0.8.1"
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
 # The following section is specific to Flutter.
+flutter_icons:
+  android: false
+  ios: true
+  image_path: "assets/logoround.png"
+
 flutter:
 
   # The following line ensures that the Material Icons font is
@@ -48,9 +69,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
-  #   - images/a_dot_ham.jpeg
+  assets:
+     - assets/quran.svg
+     - assets/logoround.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
