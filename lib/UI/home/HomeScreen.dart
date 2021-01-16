@@ -25,18 +25,20 @@ class _HomeScreenState extends State<HomeScreen> {
               child: LayoutBuilder(
                 builder: (context,   constraints) {
 
-                   return Column(
-                    crossAxisAlignment: CrossAxisAlignment.start ,
-                    children: [
-                      StoryWidget(constraints: constraints),
-                      Divider(
-                        height: constraints.maxHeight*0.05
-                        , indent: double.infinity,
-                        endIndent: double.infinity,),
-                      PrayerTimeWidget(constraints: constraints),
+                   return SingleChildScrollView(
+                     child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start ,
+                      children: [
+                        StoryWidget(constraints: constraints),
+                        Divider(
+                          height: constraints.maxHeight*0.05
+                          , indent: double.infinity,
+                          endIndent: double.infinity,),
+                        PrayerTimeWidget(constraints: constraints),
 
-                    ],
-                  );
+                      ],
+                  ),
+                   );
 
                 },
               ),
