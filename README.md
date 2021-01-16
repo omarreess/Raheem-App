@@ -1,16 +1,43 @@
-# raheem
+# Raheem-App
+Raheem is an Islamic app for Calculating Prayer Times and Daily Islamic Stories Quran-Verse , Hadith & Tafsir.
+Build With Flutter and MVVM Architecture .
 
-Your Islamic App
+## App Screenshot
+<p float="left">
+  <img src="https://github.com/omarreess/Raheem-App/blob/master/1.png" width="170" /> 
+  <img src="https://github.com/omarreess/Raheem-App/blob/master/2.png" width="170" /> 
+  <img src="https://github.com/omarreess/Raheem-App/blob/master/3.png" width="170" /> 
+  <img src="https://github.com/omarreess/Raheem-App/blob/master/4.png" width="170" /> 
+</p>
 
-## Getting Started
+## App Architecture 
+<p float="left">
+  <img src="https://github.com/omarreess/Raheem-App/blob/master/arch.png" width="400" /> 
+</p>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Code Features :
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ - It's written with Dart Programming language  
+ - Firebase Cloud Database is used 
+ - Layout Made Adaptive with LayoutBuilder
+ - Provider for State management used  
+ - Widget Splits from UI Screens to be more Readable & Clean
+ - Build with MVVM Design Pattern ( Model-View-ViewModel ) By classifying Code features in theses packages (Package By Feature)
+ - User's Location Feature is used 
+ - Proguard Rules applied and Spliting App apk versions for Decreasing App's size 
+ - Fonts used from Google Fonts library
+ 
+ 
+ Used libraries :
+ 
+ - Provider
+ - Cloud Firestore
+ - location
+ - Firebase
+ - Adhan
+ - Geocoder 
+ - Flutter svg
+ - Google Fonts
+ - Cached Network Image
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
