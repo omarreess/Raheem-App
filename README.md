@@ -2,6 +2,8 @@
 Raheem is an Islamic app for Calculating Prayer Times and Daily Islamic Stories Quran-Verse , Hadith & Tafsir.
 Build With Flutter and MVVM Architecture .
 
+ App Published on Google Play :
+https://play.google.com/store/apps/details?id=com.omaressam.raheem.raheem
 ## App Screenshot
 <p float="left">
   <img src="https://github.com/omarreess/Raheem-App/blob/master/1.png" width="170" /> 
